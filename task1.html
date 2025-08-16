@@ -3,34 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Profil Biodata - Tanpa CSS</title>
 </head>
 <body>
-
-    <section>
-        <nav>
-            <a href="#hero">Beranda</a> |
+    <section id="navigation">
+        <nav class="navbar">
+            <div class="nav-kiri">
+            <a href="#navigation">Beranda</a> |
+            </div>
+            <div class="nav-kanan">
+             <a href="#hero">Header</a> |
             <a href="#biodata">Biodata</a> |
             <a href="#portfolio">Portofolio</a>
+            </div>
         </nav>
     </section>
 
-    <hr>
 
     <section id="hero">
         <div>
-            <h1>Halo, Saya [Nama Anda]</h1>
-            <p>Seorang Web Developer & Desainer Grafis</p>
+            <h1>Selamat Datang Di Website Saya</h1>
+            <p>Perkenalkan saya jefri, seorang web developer</p>
+            <button>Pelajari Lebih Lanjut</button>
         </div>
         <div>
             <img src="https://via.placeholder.com/300" alt="Foto Profil" width="300">
         </div>
     </section>
 
-    <hr>
-
-    <section id="biodata">
         <h2>Biodata</h2>
+
+    <div class="biodata-grid">
+    
         
         <div>
             <h3>Nama Lengkap</h3>
@@ -61,43 +66,39 @@
             <h3>Pekerjaan</h3>
             <p>[Pekerjaan Anda Saat Ini]</p>
         </div>
-    </section>
+    </div>
 
     <hr>
 
-    <section id="portfolio">
+<div id="portfolio">
         <h2>Portofolio</h2>
-        <table border="1" cellpadding="5" cellspacing="0" width="100%">
-            <thead>
-                <tr>
-                    <th>No</th>
-                    <th>Nama Proyek</th>
-                    <th>Tahun</th>
-                    <th>Deskripsi</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Website Perusahaan A</td>
-                    <td>2023</td>
-                    <td>Membangun website company profile dari awal.</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Aplikasi Toko Online B</td>
-                    <td>2022</td>
-                    <td>Mengembangkan fitur checkout dan pembayaran.</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Desain Logo C</td>
-                    <td>2021</td>
-                    <td>Membuat desain logo untuk brand fashion.</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Projek 1">
+                <div class="portfolio-item-content">
+                    <h3>Projek 1</h3>
+                    <p>Deskripsi singkat mengenai projek pertama saya.</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Projek 2">
+                <div class="portfolio-item-content">
+                    <h3>Projek 2</h3>
+                    <p>Deskripsi singkat mengenai projek kedua saya.</p>
+                </div>
+            </div>
+            
+            <div class="portfolio-item">
+                <img src="https://via.placeholder.com/300x200" alt="Projek 3">
+                <div class="portfolio-item-content">
+                    <h3>Projek 3</h3>
+                    <p>Deskripsi singkat mengenai projek ketiga saya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
